@@ -9,10 +9,23 @@
 void print_rev(char *s)
 {
 	int x; 
+	int y;
+	int r;
+	char z;
 
-	for (x = '\0'; str[x] = 0 ; s--)
+	r = 0;
+	x = 0;
+	while (s[x] != '\0')
 	{
-		_putchar(str[x]);
+		x++;
 	}
-	_putchar('\n');
+
+	r = x - 1;
+
+	for (y = 0; y < x / 2; y++)
+	{
+		z = s[y];
+		s[y] = s[r];
+		s[r--] = z;
+	}
 }
