@@ -1,23 +1,42 @@
 #include "main.h"
 #include <math.h>
 
-/**
- *_sqrt_recursion - func
- *@n: string
- */  
 
+int real_recursion(int n, int x);
+
+
+/**
+ *_sqrt_recursion - function
+ *
+ *@n: number
+ *Return: n
+ */
 
 int _sqrt_recursion(int n)
 {
-	int r;
+	if (n < 0)
+	{
+		return (-1);
+	}
+		return (real_recursion(n, 0));
+}
 
-	r = sqrt(n);
-	if (r * r == n)
+
+/**
+ *real_recursion - function
+ *@n: int
+ *@x: int
+ *Return: n
+ */
+int real_recursion(int n, int x)
+{
+	if (x * x > n)
 	{
-		return(n);
+		return (-1);
 	}
-	else
+	else if (x * x == n)
 	{
-		return(-1);
+		return (x);
 	}
+	return (real_recursion(n, x + 1));
 }
