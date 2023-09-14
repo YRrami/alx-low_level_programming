@@ -10,7 +10,7 @@ int is_prime_number(int n)
 {
 	int r;
 
-	r = r / 2;
+	r = n / 2;
 	if (r + r == n || n % 10 == 5)
 	{
 		return (0);
