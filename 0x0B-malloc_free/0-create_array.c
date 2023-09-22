@@ -2,9 +2,10 @@
 #include <stdlib.h>
 
 /**
- *
- *
- *
+ *create_array - func
+ *@size: int
+ *@c: int
+ *Return: null
  */
 
 char *create_array(unsigned int size, char c)
@@ -16,7 +17,6 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	
 	x = malloc(size * sizeof(*x));
 	if (x == NULL)
 	{
@@ -27,5 +27,4 @@ char *create_array(unsigned int size, char c)
 		x[r] = c;
 	}
 	return (x);
-
 }
