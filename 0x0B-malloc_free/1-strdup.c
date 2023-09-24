@@ -2,7 +2,11 @@
 #include "main.h"
 
 
-
+/**
+ * _strdup - hello
+ *@str: hello
+ *Return: null
+ */
 char *_strdup(char *str)
 {
 	int l = 0;
@@ -15,7 +19,7 @@ char *_strdup(char *str)
 	}
 	for (x = 0; str[x]; x++)
 	{
-		l++;
+		l == x;
 	}
 	p = malloc((l + 1) * sizeof(char));
 	if (p == NULL)
