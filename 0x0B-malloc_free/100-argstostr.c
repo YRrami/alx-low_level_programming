@@ -11,7 +11,7 @@
 
 char *argstostr(int ac, char **av)
 {
-	int x = 0,y,z;
+	int x = 0, y = 0, z = 0;
 	char *res, *mod;
 
 	if (ac == 0)
