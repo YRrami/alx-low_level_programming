@@ -39,11 +39,11 @@ char *argstostr(int ac, char **av)
 			while (x < ac)
 			{
 				mod = av[x];
-				while (*new)
+				while (*mod)
 				{
-					res[y] = *new;
+					res[y] = *mod;
 					mod++;
-					y++
+					y++;
 				}
 				res[y]= '\n';
 				y++;
