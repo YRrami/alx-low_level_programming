@@ -26,7 +26,7 @@ while (s1[len1])
 }
 while (s2[len2])
 {
-	len2++
+	len2++;
 }
 total = len1 + len2 + 1;
 ptr = malloc(sizeof(char) * total);
