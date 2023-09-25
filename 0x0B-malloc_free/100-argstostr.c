@@ -11,7 +11,7 @@
 
 char *argstostr(int ac, char **av)
 {
-	int x,y,z;
+	int x = 0,y,z;
 	char *res, *mod;
 
 	if (ac == 0)
@@ -45,7 +45,7 @@ char *argstostr(int ac, char **av)
 					mod++;
 					y++;
 				}
-				res[y]= '\n';
+				res[y] = '\n';
 				y++;
 				x++;
 			}
