@@ -32,7 +32,7 @@ char *argstostr(int ac, char **av)
 				mod++;
 			}
 			z++;
-			mod++;
+			x++;
 		}
 		res = malloc(z + 1);
 		x = 0;
