@@ -7,7 +7,7 @@ char **strtow(char *str);
 
 /**
  * word_len - s
- * @str: The string 
+ * @str: The string
  * Return: s
  */
 int word_len(char *str)
@@ -24,7 +24,7 @@ int word_len(char *str)
 }
 
 /**
- * count_words - Counts the number 
+ * count_words - Counts the number
  * @str: str
  * Return: s
  */
