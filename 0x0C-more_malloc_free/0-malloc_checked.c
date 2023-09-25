@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  *malloc_checked - func
  *@b: unsigned int
