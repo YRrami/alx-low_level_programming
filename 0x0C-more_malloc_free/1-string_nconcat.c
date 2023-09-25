@@ -28,7 +28,8 @@ while (s2[len2])
 {
 	len2++;
 }
-total = len1 + len2 + 1;
+if (n >= j)
+n = j;
 ptr = malloc(sizeof(char) * total);
 if (ptr == NULL)
 	return (NULL);
@@ -40,5 +41,6 @@ for (; k < (len1 + n) ; k++)
 {
 	ptr[k] = s2[k - len1];
 }
+ptr[k] = '\0';
 return (ptr);
 }
