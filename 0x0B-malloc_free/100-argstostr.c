@@ -41,13 +41,13 @@ char *argstostr(int ac, char **av)
 				mod = av[x];
 				while (*new)
 				{
-					res[j] = *new;
-					new++;
+					res[y] = *new;
+					mod++;
 					y++
 				}
-				res[j]= '\n';
-				j++;
-				i++;
+				res[y]= '\n';
+				y++;
+				x++;
 			}
 			res[z + 1] = '\0';
 			return (res);
