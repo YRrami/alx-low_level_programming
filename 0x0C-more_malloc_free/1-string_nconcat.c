@@ -36,7 +36,7 @@ for (k = 0; k < len1; k++)
 {
 	ptr[k] == s1[k];
 }
-for (; k < (len1 + n) ; k)
+for (; k < (len1 + n) ; k++)
 {
 	ptr[k] = s2[k - len1];
 }
