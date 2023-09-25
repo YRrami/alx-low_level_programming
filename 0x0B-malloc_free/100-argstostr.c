@@ -2,8 +2,8 @@
 #include <stdlib.h>
 
 
-/*
- *argstostr - hello
+/**
+ *argstostr - helloo
  *@ac: hello
  *@av: hello
  *Return: hello
@@ -14,15 +14,10 @@ char *argstostr(int ac, char **av)
 	int x = 0, y = 0, z = 0;
 	char *res, *mod;
 
-	if (ac == 0)
+	if (ac == 0 || av == NULL)
 	{
 		return (NULL);
 	}
-	if (av == NULL)
-	{
-		return (NULL);
-	}
-
 		while (x < ac)
 		{
 			mod = av[x];
