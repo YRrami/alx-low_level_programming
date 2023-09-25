@@ -32,10 +32,10 @@ int count_words(char *str)
 {
 	int in = 0, words = 0, len = 0;
 
-	for (in = 0; *(str + in); in)
+	for (in = 0; *(str + in); in++)
 		len++;
 
-	for (in = 0; in < len; in)
+	for (in = 0; in < len; in++)
 	{
 		if (*(str + in) != ' ')
 		{
