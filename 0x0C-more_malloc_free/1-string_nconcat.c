@@ -13,7 +13,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int len1 = 0, len2 = 0, total = 0, k;
+int len1 = 0, len2 = 0, k;
 char *ptr;
 
 if (s1 == NULL)
@@ -30,7 +30,7 @@ while (s2[len2])
 }
 if (n >= j)
 n = j;
-ptr = malloc(sizeof(char) * total);
+ptr = malloc(sizeof(char) * (len1 + n + 1));
 if (ptr == NULL)
 	return (NULL);
 for (k = 0; k < len1; k++)
