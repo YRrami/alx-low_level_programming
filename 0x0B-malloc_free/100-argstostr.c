@@ -35,7 +35,7 @@ char *argstostr(int ac, char **av)
 			mod++;
 		}
 		res = malloc(z + 1);
-		i = 0;
+		x = 0;
 			while (x < ac)
 			{
 				mod = av[x];
