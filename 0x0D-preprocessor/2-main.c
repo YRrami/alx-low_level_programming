@@ -2,7 +2,7 @@
 
 
 /**
- *main- func
+ *main - func
  *Return: 0
  */
 
