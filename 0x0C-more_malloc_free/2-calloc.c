@@ -13,7 +13,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	void *ptr;
 	unsigned int x;
 	char *arra;
-	if (nmemb == 0 || size ==0)
+	
+	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
@@ -24,7 +25,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 	arra = ptr;
-		
 	for (x = 0; x < (nmemb * size); x++)
 		arra[x] = '\0';
 
