@@ -44,7 +44,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	}
 
 	looper = p;
-	for (x = 0; x < old_Size && x < new_size; x++)
+	for (x = 0; x < old_size && x < new_size; x++)
 	{
 		looper[x] = *ptr_copy++;
 	}
