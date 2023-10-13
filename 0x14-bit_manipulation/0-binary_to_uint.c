@@ -1,5 +1,6 @@
 #include "main.h"
-
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
  *binary_to_uint - func
@@ -23,17 +24,17 @@ unsigned int binary_to_uint(const char *b)
 	}
 	while (range)
 	{
-		if (b[range - 1] != '0' && b[range - 1] != "1")
+		if (b[range - 1] != '0' && b[range - 1] != '1')
 		{
 			return (0);
 		}
 
-		if (b[range - 1] == "1")
+		if (b[range - 1] == '1')
 		{
 			balance += num;
 		}
 		num *= 2;
-		len--;
+		range--;
 	}
 	return (balance);
 }
