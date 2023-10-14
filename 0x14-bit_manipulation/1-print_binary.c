@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_binary - Prints the binary representation 
+ * print_binary - Prints the binary representation
  * @n: The number
  */
 void print_binary(unsigned long int n)
