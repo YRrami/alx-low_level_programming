@@ -2,7 +2,7 @@
 
 
 /**
- * rev_String - reverse strings
+ * rev_string - reverse strings
  * @s: string variable
  */
 void rev_string(char *s)
