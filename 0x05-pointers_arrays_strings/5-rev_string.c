@@ -5,8 +5,7 @@
  * rev_String - reverse strings
  * @s: string variable
  */
-
-void rev_String(char *s)
+void rev_string(char *s)
 {
 	char x;
 	int y;
@@ -25,9 +24,5 @@ void rev_String(char *s)
 		s[y] = s[length2];
 		s[length2--] = x;
 	}
-
-
-
-
 
 }
