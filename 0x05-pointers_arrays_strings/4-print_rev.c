@@ -4,28 +4,25 @@
 /**
  *print_rev - returns the string in reverse
  *@s: char
- *
  */
 void print_rev(char *s)
 {
 	int x; 
 	int y;
 	int r;
-	char z;
+
 
 	r = 0;
-	x = 0;
-	while (s[x] != '\0')
+	while (s[r] != '\0')
 	{
-		x++;
+		r++;
 	}
 
-	r = x - 1;
+	y = r;
 
-	for (y = 0; y < x / 2; y++)
+	for (x = y - 1; x >= 0 ; x--)
 	{
-		z = s[y];
-		s[y] = s[r];
-		s[r--] = z;
+		_putchar(s[x]);
 	}
+	_putchar('\n');
 }
