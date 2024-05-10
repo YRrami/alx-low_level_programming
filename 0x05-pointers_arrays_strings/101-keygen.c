@@ -9,18 +9,27 @@
 
 int main(void)
 {
-	int x,y,z;
-    time_t t;
-    
-    srand((unsigned int) time(&t));
-	for (x = 0 ;x <= 0 ; x++)
-    {
-	for (y = 0 ; y <= 35; y++)
+	int chess[100];
+	int x;
+	int s;
+	int rr;
+
+	s = 0;
+	srand(time(NULL));
+
+	for (x = 0; x < 100; x++)
 	{
-        z = rand() % (125 + 1 - 47);
-        putchar(z + '0');
-        }
-	    
-    }
+		chess[x] = rand() % 78;
+		s += (chess[x] + '0');
+		putchar(chess[x] + '0');
+		if ((2772 - s) - '0' < 78)
+		{
+			n = 2772 - s - '0';
+			s += rr;
+			putchar(rr + '0');
+			break;
+		}
+	}
+
 	return (0);
 }
