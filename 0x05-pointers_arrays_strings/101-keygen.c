@@ -24,7 +24,7 @@ int main(void)
 		putchar(chess[x] + '0');
 		if ((2772 - s) - '0' < 78)
 		{
-			n = 2772 - s - '0';
+			rr = 2772 - s - '0';
 			s += rr;
 			putchar(rr + '0');
 			break;
